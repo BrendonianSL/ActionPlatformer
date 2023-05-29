@@ -1834,8 +1834,8 @@ TextureImporter:
         y: 520
         width: 27
         height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.84}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1855,8 +1855,8 @@ TextureImporter:
         y: 523
         width: 32
         height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.87}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1876,8 +1876,8 @@ TextureImporter:
         y: 523
         width: 31
         height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.83}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1897,8 +1897,8 @@ TextureImporter:
         y: 523
         width: 29
         height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.82}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1918,8 +1918,8 @@ TextureImporter:
         y: 522
         width: 30
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 1.01}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1939,8 +1939,8 @@ TextureImporter:
         y: 522
         width: 22
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 1.01}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1953,10 +1953,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_98
+      name: Jump_1
       rect:
         serializedVersion: 2
-        x: 22
+        x: 21
         y: 486
         width: 12
         height: 23
@@ -1974,7 +1974,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_99
+      name: Jump_2
       rect:
         serializedVersion: 2
         x: 112
@@ -1995,7 +1995,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_100
+      name: Jump_3
       rect:
         serializedVersion: 2
         x: 202
@@ -2016,7 +2016,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_101
+      name: JumpTransition_1
       rect:
         serializedVersion: 2
         x: 21
@@ -2037,7 +2037,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_102
+      name: JumpTransition_2
       rect:
         serializedVersion: 2
         x: 111
@@ -2058,7 +2058,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_103
+      name: JumpTransition_3
       rect:
         serializedVersion: 2
         x: 197
@@ -2079,7 +2079,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_104
+      name: JumpTransition_4
       rect:
         serializedVersion: 2
         x: 287
@@ -2100,7 +2100,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_105
+      name: Fall_1
       rect:
         serializedVersion: 2
         x: 17
@@ -2121,7 +2121,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_106
+      name: Fall_2
       rect:
         serializedVersion: 2
         x: 107
@@ -2142,7 +2142,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_107
+      name: Fall_3
       rect:
         serializedVersion: 2
         x: 197
@@ -2163,7 +2163,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_108
+      name: Teleport_1
       rect:
         serializedVersion: 2
         x: 12
@@ -2184,7 +2184,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_109
+      name: Teleport_2
       rect:
         serializedVersion: 2
         x: 108
@@ -2205,7 +2205,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_110
+      name: Teleport_3
       rect:
         serializedVersion: 2
         x: 201
@@ -2541,15 +2541,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_126
+      name: Landing_1
       rect:
         serializedVersion: 2
         x: 22
         y: 262
         width: 12
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2562,15 +2562,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_127
+      name: Landing_2
       rect:
         serializedVersion: 2
         x: 111
         y: 262
         width: 13
         height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.855}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2583,15 +2583,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_128
+      name: Landing_3
       rect:
         serializedVersion: 2
         x: 203
         y: 262
         width: 11
         height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.795}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2604,15 +2604,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_129
+      name: Landing_4
       rect:
         serializedVersion: 2
         x: 293
         y: 262
         width: 12
         height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.64}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3145,6 +3145,9 @@ TextureImporter:
       FallAttack_7: 1843042438
       FallAttack_8: -1917582624
       FallAttack_9: -917202360
+      Fall_1: 326259946
+      Fall_2: 2040464832
+      Fall_3: 2084371651
       FastRun_1: -605462537
       FastRun_2: -160928664
       FastRun_3: -548318210
@@ -3164,6 +3167,17 @@ TextureImporter:
       Idle_7: 612314815
       Idle_8: 613391500
       Idle_9: -838483707
+      JumpTransition_1: 14812547
+      JumpTransition_2: -1445221580
+      JumpTransition_3: 124245951
+      JumpTransition_4: 1609962881
+      Jump_1: 1749830820
+      Jump_2: 290929731
+      Jump_3: -255281428
+      Landing_1: -1585785902
+      Landing_2: -537692078
+      Landing_3: -1380616075
+      Landing_4: 1525828288
       RollAttack_1: -1650228689
       RollAttack_10: -810339160
       RollAttack_2: 344255189
@@ -3214,27 +3228,12 @@ TextureImporter:
       SpinAttack_5: -2090179666
       SpinAttack_6: -153071790
       Static Idle: -302121915
-      Sword Master Sprite Sheet 90x37_100: -255281428
-      Sword Master Sprite Sheet 90x37_101: 14812547
-      Sword Master Sprite Sheet 90x37_102: -1445221580
-      Sword Master Sprite Sheet 90x37_103: 124245951
-      Sword Master Sprite Sheet 90x37_104: 1609962881
-      Sword Master Sprite Sheet 90x37_105: 326259946
-      Sword Master Sprite Sheet 90x37_106: 2040464832
-      Sword Master Sprite Sheet 90x37_107: 2084371651
-      Sword Master Sprite Sheet 90x37_108: 364582347
-      Sword Master Sprite Sheet 90x37_109: 1585098746
-      Sword Master Sprite Sheet 90x37_110: 1429697637
       Sword Master Sprite Sheet 90x37_111: 1487982352
       Sword Master Sprite Sheet 90x37_112: 1169328110
       Sword Master Sprite Sheet 90x37_113: 396167888
       Sword Master Sprite Sheet 90x37_115: 202023534
       Sword Master Sprite Sheet 90x37_116: 898085786
       Sword Master Sprite Sheet 90x37_117: 121289002
-      Sword Master Sprite Sheet 90x37_126: -1585785902
-      Sword Master Sprite Sheet 90x37_127: -537692078
-      Sword Master Sprite Sheet 90x37_128: -1380616075
-      Sword Master Sprite Sheet 90x37_129: 1525828288
       Sword Master Sprite Sheet 90x37_130: -1742847160
       Sword Master Sprite Sheet 90x37_131: -2135114640
       Sword Master Sprite Sheet 90x37_132: -313249956
@@ -3261,8 +3260,9 @@ TextureImporter:
       Sword Master Sprite Sheet 90x37_85: -1747935472
       Sword Master Sprite Sheet 90x37_92: -263956489
       Sword Master Sprite Sheet 90x37_96: -516256407
-      Sword Master Sprite Sheet 90x37_98: 1749830820
-      Sword Master Sprite Sheet 90x37_99: 290929731
+      Teleport_1: 364582347
+      Teleport_2: 1585098746
+      Teleport_3: 1429697637
       Walk_1: -1501276341
       Walk_2: -2029153112
       Walk_3: 1802743810
