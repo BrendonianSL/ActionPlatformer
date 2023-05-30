@@ -17,7 +17,14 @@ public class PlayerMovement : MonoBehaviour {
 	bool jump = false;
 	//Determines if character is currently crouching
 	bool crouch = false;
+
+	private bool doubleJump;
 	bool HardLanding;
+
+	void Start()
+    {
+		
+    }
 	// Update is called once per frame
 	void Update () {
 
@@ -33,6 +40,11 @@ public class PlayerMovement : MonoBehaviour {
 			animator.SetBool("IsJumping", true);
 			animator.SetBool("IG", false);
 		}
+
+		if(Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
+        {
+			
+        }
 
 		//Statement checks that if key is held down, it will change speed until it is up.
 		if (Input.GetKeyDown(KeyCode.LeftShift))

@@ -75,9 +75,9 @@ GameObject:
   - component: {fileID: 3957595116018034708}
   - component: {fileID: 5270538067522886721}
   - component: {fileID: 3136652631072698880}
-  - component: {fileID: 1275987106001239598}
-  - component: {fileID: 4354591692577408960}
   - component: {fileID: 660551142895816497}
+  - component: {fileID: 522097701042391693}
+  - component: {fileID: 5475743188749473574}
   m_Layer: 0
   m_Name: SwordMaster
   m_TagString: Untagged
@@ -211,61 +211,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.00061861187, y: 0}
   m_Size: {x: 0.10752664, y: 0.24000001}
   m_Direction: 0
---- !u!114 &1275987106001239598
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3957595116018034707}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd2762652a9ef4a40aaaff8325703e60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controller: {fileID: 4354591692577408960}
-  animator: {fileID: 3957595116018034708}
-  runSpeed: 40
---- !u!114 &4354591692577408960
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3957595116018034707}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d04dd054e69cd684396b3b97eafa73b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_JumpForce: 1000
-  m_CrouchSpeed: 0.36
-  m_MovementSmoothing: 0.05
-  m_AirControl: 1
-  m_WhatIsGround:
-    serializedVersion: 2
-    m_Bits: 2147483647
-  m_GroundCheck: {fileID: 4738618554322477774}
-  m_CeilingCheck: {fileID: 1807854166788063216}
-  m_CrouchDisableCollider: {fileID: 0}
-  OnLandEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1275987106001239598}
-        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
-        m_MethodName: OnLanding
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnCrouchEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &660551142895816497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,6 +221,36 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e47d8b271f71140418366bcc7e989691, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &522097701042391693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3957595116018034707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da17b08cc18db294392b5e121dcf1735, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 5270538067522886721}
+  groundCheck: {fileID: 4738618554322477774}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  animator: {fileID: 3957595116018034708}
+--- !u!114 &5475743188749473574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3957595116018034707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ea628835ed4cc1419abd9883472a7ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &6080255132770976017
@@ -358,5 +333,6 @@ MonoBehaviour:
   InCombat: 0
   SpinAttackUnlock: 0
   BlockUnlock: 0
-  SlamUnlock: 0
+  Slash2Unlock: 0
   Animator: {fileID: 3957595116018034708}
+  cooldownTime: 2
