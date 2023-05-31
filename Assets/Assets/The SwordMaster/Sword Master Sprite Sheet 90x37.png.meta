@@ -2730,7 +2730,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_135
+      name: StaticWallHold
       rect:
         serializedVersion: 2
         x: 23
@@ -2793,7 +2793,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_138
+      name: WallSlide_1
       rect:
         serializedVersion: 2
         x: 22
@@ -2814,7 +2814,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_139
+      name: WallSlide_2
       rect:
         serializedVersion: 2
         x: 113
@@ -2835,7 +2835,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_140
+      name: WallSlide_3
       rect:
         serializedVersion: 2
         x: 203
@@ -2856,7 +2856,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_141
+      name: WallStop_1
       rect:
         serializedVersion: 2
         x: 22
@@ -2877,7 +2877,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_142
+      name: WallStop_2
       rect:
         serializedVersion: 2
         x: 113
@@ -2898,7 +2898,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_143
+      name: WallStop_3
       rect:
         serializedVersion: 2
         x: 203
@@ -3228,6 +3228,7 @@ TextureImporter:
       SpinAttack_5: -2090179666
       SpinAttack_6: -153071790
       Static Idle: -302121915
+      StaticWallHold: -2062123489
       Sword Master Sprite Sheet 90x37_111: 1487982352
       Sword Master Sprite Sheet 90x37_112: 1169328110
       Sword Master Sprite Sheet 90x37_113: 396167888
@@ -3239,15 +3240,8 @@ TextureImporter:
       Sword Master Sprite Sheet 90x37_132: -313249956
       Sword Master Sprite Sheet 90x37_133: 1468335985
       Sword Master Sprite Sheet 90x37_134: 1372345685
-      Sword Master Sprite Sheet 90x37_135: -2062123489
       Sword Master Sprite Sheet 90x37_136: -1821809739
       Sword Master Sprite Sheet 90x37_137: -172158575
-      Sword Master Sprite Sheet 90x37_138: -2104407187
-      Sword Master Sprite Sheet 90x37_139: 917132193
-      Sword Master Sprite Sheet 90x37_140: 1905421019
-      Sword Master Sprite Sheet 90x37_141: -1742623109
-      Sword Master Sprite Sheet 90x37_142: -217826210
-      Sword Master Sprite Sheet 90x37_143: 153542727
       Sword Master Sprite Sheet 90x37_48: -1261910607
       Sword Master Sprite Sheet 90x37_50: 856661590
       Sword Master Sprite Sheet 90x37_52: 398619496
@@ -3271,6 +3265,12 @@ TextureImporter:
       Walk_6: -1706928964
       Walk_7: -318412652
       Walk_8: -596236489
+      WallSlide_1: -2104407187
+      WallSlide_2: 917132193
+      WallSlide_3: 1905421019
+      WallStop_1: -1742623109
+      WallStop_2: -217826210
+      WallStop_3: 153542727
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

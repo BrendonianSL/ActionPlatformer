@@ -4,23 +4,38 @@ using UnityEngine;
 
 public class SwordMaster_Movement : MonoBehaviour
 {
+
+    //These variables control basic movement
     private float horizontal;
     private float speed = 8f;
     private float jumpingPower = 16f;
     private bool isFacingRight = true;
 
-    private bool doubleJump;
-
+    //These variables are built to control dashing
     private bool canDash = true;
     private bool isDashing;
     private float dashingPower = 5f;
     private float dashingTime = 0.2f;
     private float dashingCooldown = 1f;
+    private bool doubleJump;
 
+    //These variables control walljump/sliding
+    private bool isWallSliding;
+    private float wallSlidingSpeed = 2f;
+    private bool isWallJumping;
+    private float wallJumpingDirection;
+    private float wallJumpingTime = 0.2f;
+    private float wallJumpingCounter;
+    private float wallJumpingDuration = 0.4f;
+    private Vector2 wallJumpingPower = new Vector2(2f, 10f);
+
+    //These variables control basic values that help movement work
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Animator animator;
+    [SerializeField] private Transform wallCheck;
+    [SerializeField] private LayerMask wallLayer;
 
     private void Update()
     {
@@ -60,7 +75,13 @@ public class SwordMaster_Movement : MonoBehaviour
             StartCoroutine(Dash());
         }
 
-        Flip();
+        WallSlide();
+        WallJump();
+
+        if (!isWallJumping)
+        {
+            Flip();
+        }
     }
 
     private void FixedUpdate()
@@ -70,7 +91,10 @@ public class SwordMaster_Movement : MonoBehaviour
             return;
         }
 
-        rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+        if (!isWallJumping)
+        {
+            rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+        }
         animator.SetFloat("yVelocity", rb.velocity.y);
     }
 
@@ -80,9 +104,58 @@ public class SwordMaster_Movement : MonoBehaviour
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 
-    public void OnLanding()
+    //These series of bools control wall controls
+    private bool IsWalled()
     {
-        Debug.Log("We are in OnLanding");
+        return Physics2D.OverlapCircle(wallCheck.position, 0.2f, wallLayer);
+    }
+    private void WallSlide()
+    {
+        if (IsWalled() && !IsGrounded() && horizontal != 0f)
+        {
+            isWallSliding = true;
+            rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -wallSlidingSpeed, float.MaxValue));
+        }
+        else
+        {
+            isWallSliding = false;
+        }
+    }
+    private void WallJump()
+    {
+        if (isWallSliding)
+        {
+            isWallJumping = false;
+            wallJumpingDirection = -transform.localScale.x;
+            wallJumpingCounter = wallJumpingTime;
+
+            CancelInvoke(nameof(StopWallJumping));
+        }
+        else
+        {
+            wallJumpingCounter -= Time.deltaTime;
+        }
+
+        if (Input.GetButtonDown("Jump") && wallJumpingCounter > 0f)
+        {
+            isWallJumping = true;
+            rb.velocity = new Vector2(wallJumpingDirection * wallJumpingPower.x, wallJumpingPower.y);
+            wallJumpingCounter = 0f;
+
+            if (transform.localScale.x != wallJumpingDirection)
+            {
+                isFacingRight = !isFacingRight;
+                Vector3 localScale = transform.localScale;
+                localScale.x *= -1f;
+                transform.localScale = localScale;
+            }
+
+            Invoke(nameof(StopWallJumping), wallJumpingDuration);
+        }
+    }
+    private void StopWallJumping()
+    {
+        isWallJumping = false;
     }
 
     //This void determines if we can flip our character
