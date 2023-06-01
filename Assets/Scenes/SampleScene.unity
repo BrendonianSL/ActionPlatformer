@@ -1092,6 +1092,10 @@ PrefabInstance:
       propertyPath: m_WhatIsGround.m_Bits
       value: 64
       objectReference: {fileID: 0}
+    - target: {fileID: 5270538067522886721, guid: aa4565ae026d7aa4a9582b6f70eaf718, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4354591692577408960, guid: aa4565ae026d7aa4a9582b6f70eaf718, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: aa4565ae026d7aa4a9582b6f70eaf718, type: 3}
