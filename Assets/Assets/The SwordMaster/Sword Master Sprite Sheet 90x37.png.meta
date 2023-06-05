@@ -1226,7 +1226,7 @@ TextureImporter:
         width: 73
         height: 22
       alignment: 9
-      pivot: {x: 0.23998542, y: 0.5604692}
+      pivot: {x: 0.23998542, y: 0.61}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1435,8 +1435,8 @@ TextureImporter:
         y: 632
         width: 17
         height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.56, y: 0.61}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1457,7 +1457,7 @@ TextureImporter:
         width: 68
         height: 34
       alignment: 9
-      pivot: {x: 0.19490029, y: 0.29078943}
+      pivot: {x: 0.17, y: 0.41}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1477,8 +1477,8 @@ TextureImporter:
         y: 632
         width: 22
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.35, y: 0.875}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1496,10 +1496,10 @@ TextureImporter:
         serializedVersion: 2
         x: 295
         y: 632
-        width: 22
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 62
+        height: 34
+      alignment: 9
+      pivot: {x: 0.12, y: 0.415}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1512,36 +1512,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_73
-      rect:
-        serializedVersion: 2
-        x: 350
-        y: 634
-        width: 7
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 861590a95ab33cf44a5666840cee55f8
-      internalID: -113051639
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Slam_5
       rect:
         serializedVersion: 2
         x: 385
         y: 632
-        width: 22
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 63
+        height: 33
+      alignment: 9
+      pivot: {x: 0.12, y: 0.425}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

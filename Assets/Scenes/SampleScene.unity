@@ -318,11 +318,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &999676951 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3588904086520590571, guid: aa4565ae026d7aa4a9582b6f70eaf718, type: 3}
-  m_PrefabInstance: {fileID: 3957595116597889920}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1146179937
 GameObject:
   m_ObjectHideFlags: 0
@@ -876,37 +871,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2028763694}
   m_CullTransparentMesh: 1
---- !u!1 &2078686741
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2078686742}
-  m_Layer: 0
-  m_Name: WallCheck
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2078686742
+--- !u!4 &2078686742 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4478154836447111081, guid: aa4565ae026d7aa4a9582b6f70eaf718, type: 3}
+  m_PrefabInstance: {fileID: 3957595116597889920}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2078686741}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.057, y: -0.049, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 999676951}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2140153355
 GameObject:
   m_ObjectHideFlags: 0
@@ -1020,10 +989,6 @@ PrefabInstance:
       propertyPath: wallCheck
       value: 
       objectReference: {fileID: 2078686742}
-    - target: {fileID: 522097701042391693, guid: aa4565ae026d7aa4a9582b6f70eaf718, type: 3}
-      propertyPath: wallLayer.m_Bits
-      value: 128
-      objectReference: {fileID: 0}
     - target: {fileID: 1737911852889699226, guid: aa4565ae026d7aa4a9582b6f70eaf718, type: 3}
       propertyPath: m_Mass
       value: 0.0001

@@ -16,12 +16,16 @@ public class SwordMaster_Weapon : MonoBehaviour
     //Accesses the animator for the script to access and manipulate
     public Animator Animator;
 
-    public float cooldownTime = 2f;
-    private float nextFireTime = 0f;
-    public static int noOfClicks = 0;
+    //Total cooldown time until we can attack next
+    public float cooldownTime = 1.3f;
+    //Tracks what combo we are currently on
+    public static int combo;
+    //Tracks the maximum combo we can do
+    public static int maxCombo = 3;
+    //Holds our current cooldown
+    public float currentCooldown;
     float lastClickedTime = 0;
-    float maxComboDelay = 1;
-
+    float maxDelay = 1f;
 
 
     // Start is called before the first frame update
@@ -49,11 +53,61 @@ public class SwordMaster_Weapon : MonoBehaviour
         {
             SpinAttack();
         }
+
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            if(combo == 3)
+            {
+                return;
+            }
+            else
+            {
+                Slash();
+            }     
+        }
+
+        if (Animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 0.5f && Animator.GetCurrentAnimatorStateInfo(0).IsName("Slash1"))
+        {
+            Animator.SetBool("Slash1", false);
+        }
+        if (Animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 0.5f && Animator.GetCurrentAnimatorStateInfo(0).IsName("Slash2"))
+        {
+            Animator.SetBool("Slash2", false);
+        }
+        if (Animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 0.5f && Animator.GetCurrentAnimatorStateInfo(0).IsName("Slash3"))
+        {
+            Animator.SetBool("Slash3", false);
+            combo = 0;
+        }
+
+        if (Time.time - lastClickedTime > maxDelay)
+        {
+            combo = 0;
+        }
     }
     public void Slash()
     {
-        //Executes the animation
-        Animator.SetTrigger("Slash");
+        lastClickedTime = Time.time;
+        combo++;
+        Debug.Log("Attack " + combo);
+
+        if (combo == 1)
+        {
+            Animator.SetBool("Slash1", true);
+        }
+
+        if (combo == 2)
+        {
+            Animator.SetBool("Slash1", false);
+            Animator.SetBool("Slash2", true);
+        }
+
+        if (combo == 3)
+        {
+            Animator.SetBool("Slash2", false);
+            Animator.SetBool("Slash3", true);
+        }
+
     }
 
     public void SpinAttack()
